@@ -322,7 +322,7 @@ export const useAutomationPosts = (id: string) => {
       postid: string;
       caption?: string;
       media: string;
-      mediaType: "IMAGE" | "VIDEO" | "CAROSEL_ALBUM";
+      mediaType: "IMAGE" | "VIDEO" | "CAROUSEL_ALBUM";
     }[]
   >([]);
 
@@ -330,7 +330,7 @@ export const useAutomationPosts = (id: string) => {
     postid: string;
     caption?: string;
     media: string;
-    mediaType: "IMAGE" | "VIDEO" | "CAROSEL_ALBUM";
+    mediaType: "IMAGE" | "VIDEO" | "CAROUSEL_ALBUM";
   }) => {
     setPosts((prevItems) => {
       if (prevItems.find((p) => p.postid === post.postid)) {
